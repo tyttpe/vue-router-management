@@ -20,11 +20,21 @@ export default new Router({
     },
     {
       //主页面
-			path: '/main',
+      path: '/main',
+      redirect: 'index',
 			component: resolve => require(['../components/Main.vue'], resolve),
 			meta: {
 				title: '主页面'
-			}
+      },
+      children: [
+        {
+          path: '/index',
+					component: resolve => require(['../components/Index.vue'], resolve),
+					meta: {
+						title: '首页'
+					},
+        }
+      ]
     }
   ]
 })
