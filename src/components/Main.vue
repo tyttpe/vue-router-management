@@ -80,7 +80,6 @@
       <div class="content-box">
         <router-view/>
       </div>
-
     </div>
   </div>
 </template>
@@ -112,8 +111,8 @@ export default {
 
 
 <style scoped>
-a:link{
-  text-decoration:none;
+a:link {
+  text-decoration: none;
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
@@ -128,6 +127,10 @@ a:link{
   display: flex;
   flex-direction: column;
 }
+.content-box {
+  width: 1250px;
+}
+
 .login-out {
   float: right;
 }
