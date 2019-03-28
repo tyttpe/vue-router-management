@@ -1,5 +1,16 @@
 <template>
+
   <div class="container-main">
+    
+    <div class="header">
+			<div class="nav">
+				<router-link to="/">任务中心</router-link>
+				<router-link to="/">库管理</router-link>
+				<router-link to="/">个人中心</router-link>
+				<router-link to="/login">退出</router-link>
+			</div>
+		</div>
+
     <el-radio-group v-model="isCollapse" style="margin-bottom: 20px;">
       <el-radio-button :label="false">展开</el-radio-button>
       <el-radio-button :label="true">收起</el-radio-button>
